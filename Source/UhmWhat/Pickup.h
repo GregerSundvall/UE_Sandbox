@@ -20,12 +20,6 @@ class UHMWHAT_API APickup : public AActor
 	double cycleValueX;
 	double cycleValueY;
 	double cycleValueZ;
-	double valueX;
-	double valueY;
-	double valueZ;
-	double valueXSign;
-	double valueYSign;
-	double valueZSign;
 
 private:
 	double GetValueOnCurve(double current);

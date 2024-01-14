@@ -19,7 +19,6 @@ void APickup::BeginPlay()
 	cycleValueX = 0;
 	cycleValueY = cycleDuration / 3;
 	cycleValueZ = cycleValueY * 2;
-
 }
 
 double APickup::GetValueOnCurve(double current)
