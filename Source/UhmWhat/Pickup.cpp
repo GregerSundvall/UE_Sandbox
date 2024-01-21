@@ -38,11 +38,6 @@ void APickup::Tick(float DeltaTime)
 	cycleValueZ += DeltaTime;
 	if(cycleValueZ >= cycleDuration) cycleValueZ = 0;
 	
-	UE_LOG(LogTemp, Warning, TEXT("%f"), cycleValueX)
-	UE_LOG(LogTemp, Warning, TEXT("%f"), cycleValueY)
-	UE_LOG(LogTemp, Warning, TEXT("%f"), cycleValueZ)
-	UE_LOG(LogTemp, Warning, TEXT(" "))
-	
 	rotationToAdd->X = GetValueOnCurve(cycleValueX) * maxSpeed * DeltaTime;
 	rotationToAdd->Y = GetValueOnCurve(cycleValueY) * maxSpeed * DeltaTime;
 	rotationToAdd->Z = GetValueOnCurve(cycleValueZ) * maxSpeed * DeltaTime;

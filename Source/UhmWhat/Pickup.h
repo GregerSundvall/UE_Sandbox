@@ -12,8 +12,6 @@ class UHMWHAT_API APickup : public AActor
 	GENERATED_BODY()
 
 	FQuat* rotationToAdd;
-	// FVector3d* TickRotation;
-	
 	double cycleDuration;
 	double minSpeed;
 	double maxSpeed;
