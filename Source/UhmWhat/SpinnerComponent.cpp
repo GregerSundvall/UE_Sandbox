@@ -8,9 +8,9 @@ USpinnerComponent::USpinnerComponent()
 	actor = GetOwner();
 	rotationToAdd = new FQuat(0, 0, 0, 1);
 	timeInCycle = 0;
-	cycleDuration = 3;
-	separation = 0.5;
-	maxSpeed = 4;
+	cycleDuration = 9;
+	separation = 0.6;
+	maxSpeed = 2;
 }
 
 void USpinnerComponent::BeginPlay()
