@@ -14,11 +14,14 @@ class UHMWHAT_API USpinnerComponent : public UActorComponent
 	FQuat* rotationToAdd;
 	AActor* actor;
 
+	UPROPERTY(EditAnywhere, Category=Attributes)
 	double cycleDuration;
-	double timeInCycle;
+	UPROPERTY(EditAnywhere, Category=Attributes)
 	double separation;
+	UPROPERTY(EditAnywhere, Category=Attributes)
 	double maxSpeed;
 
+	double timeInCycle;
 	
 public:	
 	USpinnerComponent();
